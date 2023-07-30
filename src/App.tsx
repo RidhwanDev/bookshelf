@@ -3,6 +3,8 @@ import { Authenticator } from "./components/core/Authenticator";
 import { Header } from "./components/core/Header";
 import Layout from "./components/core/Layout";
 import { BOOKSHELF_PATH, EXPLORE_PATH } from "./util/routes";
+import { Bookshelf } from "./pages/bookshelf/Bookshelf";
+import { Home } from "./pages/home/Home";
 
 const App = () => {
   return (
@@ -11,8 +13,8 @@ const App = () => {
         <Header />
         <Routes>
           <Route path={EXPLORE_PATH} element={<Layout />}>
-            <Route index element={<div>Explore page</div>} />
-            <Route path={BOOKSHELF_PATH} element={<div>Bookshelf page</div>} />
+            <Route index element={<Home />} />
+            <Route path={BOOKSHELF_PATH} element={<Bookshelf />} />
           </Route>
         </Routes>
       </>
