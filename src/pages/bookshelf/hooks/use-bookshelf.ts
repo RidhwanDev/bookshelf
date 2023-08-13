@@ -9,7 +9,7 @@ import {
 } from "../../../api/graphql/generated";
 
 export const useBookshelf = () => {
-  const { data, loading, fetchMore, refetch } = useListBooksQuery({
+  const { data, loading, fetchMore } = useListBooksQuery({
     fetchPolicy: "cache-and-network",
   });
   const [fetchingMore, setFetchingMore] = useState(false);

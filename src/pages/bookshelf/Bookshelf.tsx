@@ -3,7 +3,6 @@ import PageTitle from "../../components/common/PageTitle";
 import { useBookshelf } from "./hooks/use-bookshelf";
 import { BookshelfTabs } from "./BookshelfTabs";
 import { Book } from "../../api/graphql/generated";
-import BookshelfCard from "./BookshelfCard";
 import { useState } from "react";
 import BookDetailsDialog from "./BookDetailsDialog";
 import BookshelfCardList from "./BookshelfCardList";
