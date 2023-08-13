@@ -5,7 +5,9 @@ import { Amplify } from "aws-amplify";
 import { Authenticator } from "@aws-amplify/ui-react";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { theme } from "./theme.tsx";
-import { BrowserRouter as Router } from "react-router-dom";
+// this should be browser router but I'm using hash router for github pages
+import { HashRouter as Router } from "react-router-dom";
+// import { BrowserRouter as Router } from "react-router-dom";
 import { ApolloProvider } from "@apollo/client";
 import { client } from "./api/graphql/make-apollo-client.ts";
 
